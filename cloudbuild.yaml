@@ -5,6 +5,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'build'
+      - '--network=cloudbuild'
       - '--build-arg'
       - 'version=1.24.0'
       - '-t'
